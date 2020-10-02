@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Code Hub- MinMax</title>
+</head>
+<body bgcolor = "#EAECEE" style = "padding:20px; font-family: Georgia, serif">
+    <header>
+    <center>
+    <h1>Code Hub</h1>
+    </center> 
+    </header>
+    
+    <br>
+    
+    <section>
+    <h3 style = "padding: 5px; background-color:#BFC9CA">PROBLEM STATEMENT:	</h3>
+    <p style = "font-size: 20px">Write a program in any language to find the maximum and minimum element in an array.</p>
+    </section>
+    
+    <br><hr>
+    
+    <section>
+    <h3 style = "padding: 5px; background-color:#BFC9CA">CODE:</h3>
+    <code style = "font-size: 15px;" >
+        int main()<br>
+        {<br>
+            &ensp;&ensp;&ensp;&ensp;int a[1000],i,n,min,max;<br>
+ 
+            &ensp;&ensp;&ensp;&ensp;printf("Enter size of the array : ");<br>
+            &ensp;&ensp;&ensp;&ensp;scanf("%d",&n);<br>
+ 
+            &ensp;&ensp;&ensp;&ensp;printf("Enter elements in array : ");<br>
+            &ensp;&ensp;&ensp;&ensp;for(i=0;i<n;i++) <br>
+            {<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;scanf("%d",&a[i]);<br>
+                &ensp;&ensp;&ensp;&ensp;}<br>
+ 
+            &ensp;&ensp;&ensp;&ensp;min=max=a[0];<br>
+            &ensp;&ensp;&ensp;&ensp;for(i=1; i<n; i++)<br>
+            {<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;if(min>a[i])<br>
+		        						&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;min=a[i];<br>
+                &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;if(max<a[i])
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;max=a[i];<br>   
+                    &ensp;&ensp;&ensp;&ensp;}<br>
+            &ensp;&ensp;&ensp;&ensp;printf("minimum of array is: %d",min); <br>
+            &ensp;&ensp;&ensp;&ensp;printf("\nmaximum of array is: %d",max);<br>
+ 
+ 
+            &ensp;&ensp;&ensp;&ensp;return 0;<br>
+        }
+    </code>
+</section>
+<br>
+<hr>
+    <section>
+    <h3 style = "padding: 5px; background-color:#BFC9CA">SAMPLE INPUT:</h3><p style = "font-size: 18px;"><samp >Enter size of array: 5
+    <br>Enter elements in array:<kbd>10</kbd>
+    <br>
+            <kbd>30</kbd><br>
+            <kbd>80</kbd><br>
+            <kbd>60</kbd><br>
+            <kbd>20</kbd><br>
+        </samp></p>
+    </section>
+    <br><hr>
+    <section>
+        <h3 style = "padding: 5px; background-color:#BFC9CA">SAMPLE OUTPUT:</h3>
+        <p style = "font-size: 18px"><samp>Minimun array element is: 10<br>Maximum of array is : 80</samp></p>
+    </section>
+    <br><hr>
+    <section>
+        <h3 style = "padding: 5px; background-color:#BFC9CA">COMPLEXITY:</h3>
+        <p style = "font-size: 20px">Time complexity of the above program is: O(n)</p>
+    </section>
+    <section>
+        
+    </section><br><hr>
+    
+    <footer>
+        <address>
+        <p style = "font-size: 20px">For more C Programmes, visit this site:</p>
+        <a href="https://codeforwin.org/">Click here!</a>
+        </address>
+    </footer>
+</body>
+</html>
