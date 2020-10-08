@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>homeshop.com</title>
+        <style>
+            textarea 
+            {
+                height: 80px;
+                weidth: 250px;
+            }
+        </style>
+    </head>
+
+    <body style = "padding-left: 20px;">
+
+    <form action = "" method = "get" onsubmit = "sub()">
+          
+     	<div style="padding: 30px; font-size:20px"> 
+   		homeshop feedback form
+ 		</div>
+        
+        <label for="fname">First name:</label>
+ 		<input type="text" id="fname" name="fname" required  placeholder="Enter first name">
+        <br><br>
+        
+  		<label for="lname">Last name:</label>
+  		<input type="text" id="lname" name="lname" required  placeholder="Enter last name">
+        <br><br>
+  		
+        <div>
+        <p>Product review:</p>
+  		<input type="radio" id="good" name="review" value="good">
+  		<label for="good">Good</label>
+        <br>
+  		<input type="radio" id="excellent" name="review" value="excellent">
+  		<label for="excellent">Excellent</label>
+        <br>
+  		<input type="radio" id="bad" name="review" value="bad">
+  		<label for="bad">Bad</label>
+        <br><br>
+        </div>
+        
+        <label for="response">Enter your Feedback:</label><br>
+        <textarea id="response" name="response" placeholder="Write here" row="20" col="25"  required></textarea>
+        <br><br>
+        
+        <label for="image">Upload image:</label> <br>
+        <input type="file" accept="image/*"> <br><br>
+
+        <label for="pdf">Upload pdf:</label> <br>
+        <input type="file" accept=".pdf"> <br><br>
+
+        <label for="pdf">Upload docx:</label> <br>
+        <input type="file" accept=".docx"> <br><br>
+        
+        <div>
+		<button type="submit" onclick="sub()"> Submit </button> 
+        <button type="reset" onclick="res()"> Reset</button>  
+        <br>
+        </div>
+        
+       
+    
+    </form>
+        
+        <script>
+         function sub() 
+            {
+  			    alert("Are you sure you want to submit?");
+		    }
+		</script>
+        
+        <script>
+            function res()
+            {
+  			    alert("Are you sure you want to reset?");
+		    }
+		</script>
+       
+    </body>
+</html>
+
