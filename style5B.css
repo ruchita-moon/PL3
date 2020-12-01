@@ -1,0 +1,45 @@
+.head {
+  padding: 5px;
+  text-align: right;
+  background:#40E0D0;
+  color: black;
+  font-size: 20px;
+}
+
+.foot {
+  text-align: left;
+  padding: 5px;
+  background:#40E0D0;
+  color: black;
+  font-size: 20px;
+}
+
+.heading {
+  color: red;
+  font-size: 50px;
+}
+
+.back {
+  margin: 0;
+  padding: 5px;
+  background-color: #CCCCFF;
+}
+
+.back > p, .box {
+  margin: 10px;
+  padding: 5px;
+}
+
+.box {
+  background: #F2f0f6;
+  margin: 5px;
+  font-size: 90%;
+}
+
+.bloghead {
+    padding: 5px;
+    text-align: right;
+    color: white;
+    background:#4144ee;
+    font-size: 20px;
+}
