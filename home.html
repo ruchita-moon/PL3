@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        }
+
+        html {
+        box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+        box-sizing: inherit;
+        }
+
+        .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+        }
+         
+        .foot {
+        text-align: left;
+        padding: 5px;
+        background:#1c3953;
+        color: white;
+        font-size: 20px;
+        }
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        background-color: beige;
+        }
+
+        .about-section {
+        padding: 80px;
+        text-align: center;
+        background-color: #1c3953;
+        color: white;
+        }
+
+        .container {
+        padding: 0 16px;
+        }
+
+        .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .title {
+        color: grey;
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+
+        @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+        }
+    </style>
+</head>
+
+<body style = "background-color: #caf1e9;">
+
+  <div style = "background-color: #a3acaf; font-size: 20px; text-align: center;">
+    <hr>
+	    <nav>
+	  	  <a href="article1.html">Article 1</a> |
+        <a href="article2.html">Article 2</a> |
+        <a href="article3.html">Article 3</a> 
+      </nav>
+    <hr>
+  </div> 
+    
+  <div class="about-section">
+    <h1>Ruchita's Health Blog</h1>
+    <p>Stay Healthy.</p>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image1.jfif" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>5 Medical Innovations You Probably Didn’t Notice Happened in 2020</h2>
+        <br><a href = "article1.html">Read more</a>
+      </div>
+    </div>
+    <br>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image2.jfif" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>COVID-19 Decision Fatigue: What It Is and How to Deal With It</h2>    
+        <br><a href = "article2.html">Read more</a>
+      </div>
+    </div>
+    <br>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image3.jfif" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Why a Surgical Mask May Be Better Than a Fabric Mask for Teachers</h2>
+        <br><a href = "article3.html">Read more</a>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+
+<section>
+  <br><hr>
+    <footer class = "foot" style = "text-align: left;">
+    <h3>Author's Information:<br></h3>
+    <address><i>Name: Ruchita Moon 
+    <br>
+    <a style = "color: white;" href = "mailto:ruchitamoon28@gmail.com">Contact: ruchitamoon28@gmail.com</a></i>
+    <br><a style = "color: white;" href = "Contact.html">Contact Us</a>
+    </address>
+    </footer>
+  </section>
+
+</body>
+</html>
